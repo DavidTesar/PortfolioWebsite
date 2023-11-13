@@ -1,4 +1,57 @@
-/* Reset some default styles */
+@keyframes myAnim {
+	0% {
+		transform: scale(0.5);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+.section-top {
+    align-items: center;
+    text-align: center;
+}
+
+p {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.profile-image {
+    animation: myAnim 2s ease 0s 1 normal forwards;
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+}
+
+.profile-image:hover{
+    opacity:0.6;
+}
+
+.section-profile {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+}
+
+.section-profile-text{
+    font-size: 70px;
+    transition: all .1s ease-in;
+}
+
+.section-profile-text:hover{
+    opacity:0.6;
+    letter-spacing: 0.1em;
+}
+
+#gif{
+    opacity:1;
+}
+
+#gif:hover{
+    opacity:0.6;
+}
+
 body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
